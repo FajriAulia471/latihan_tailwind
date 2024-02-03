@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <html data-theme="cupcake"></html>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline text-center">Belajar Tailwind</h1>
+
+    <div class="hidden lg:drawer drawerlg:drawer-open">
+      <!-- Desktop Drawer -->
+      <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content">
+        <label for="my-drawer" class="btn btn-primary drawer-button"
+          >Open drawer</label
+        >
+      </div>
+      <div class="drawer-side">
+        <label
+          for="my-drawer"
+          aria-label="close sidebar"
+          class="drawer-overlay"
+        ></label>
+        <ul
+          class="menu menu-lg p-4 w-80 min-h-full bg-base-200 text-base-content"
+        >
+          <!-- Menu items for desktop -->
+          <li>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                class="humbleicons"
+              >
+                <g stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M6 16l4.5 4.5 4-4a.707.707 0 011 0v0a.707.707 0 001 0l2.293-2.293a1 1 0 000-1.414l-2.086-2.086a1 1 0 010-1.414l3.586-3.586a1 1 0 000-1.414l-.586-.586a1 1 0 00-1.414 0l-3.586 3.586a1 1 0 01-1.414 0l-2.086-2.086a1 1 0 00-1.414 0L7.5 7.5a.707.707 0 000 1v0a.707.707 0 010 1l-4 4L6 16zm0 0l2.5-2.5"
+                  />
+                  <path d="M7.5 8.5l8 8" />
+                </g>
+              </svg>
+              Item 2
+            </a>
+          </li>
+          <li>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              Item 1
+            </a>
+          </li>
+          <li>
+            <a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                />
+              </svg>
+              Item 3
+            </a>
+          </li>
+          <!-- More menu items for desktop -->
+          <!-- ... -->
+        </ul>
+      </div>
+    </div>
+
+    <ul
+      class="menu menu-horizontal bg-base-200 rounded-box mt-6 fixed bottom-0 w-full mx-auto min-h-16"
+    >
+      <li>
+        <a class="tooltip" data-tip="Home">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            class="humbleicons hi-view-grid"
+          >
+            <path
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="currentColor"
+              stroke-linejoin="round"
+              stroke-linecap="round"
+              stroke-width="2"
+              d="M4 10.5V4h6v6.5H4zm10 0V4h6v6.5h-6zm-10 10V14h6v6.5H4zm10 0V14h6v6.5h-6z"
+            />
+          </svg>
+        </a>
+      </li>
+      <!-- Add more menu items as needed -->
+    </ul>
+  </body>
+</html>
